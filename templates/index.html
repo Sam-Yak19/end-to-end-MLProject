@@ -1,1 +1,74 @@
-<h1>Welcome to home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to Home Page</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+      color: #0a2540;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 1rem;
+      text-align: center;
+    }
+    h1 {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 2rem 3rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      font-size: 2.8rem;
+      font-weight: 700;
+      max-width: 600px;
+      margin: 0 0 2rem 0;
+      user-select: none;
+      transition: transform 0.3s ease;
+    }
+    h1:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    }
+    .btn-link {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      font-size: 1.15rem;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(0,123,255,0.13);
+      transition: background-color 0.2s, transform 0.2s;
+      margin-top: 1rem;
+    }
+    .btn-link:hover, .btn-link:focus {
+      background-color: #0056b3;
+      transform: translateY(-2px) scale(1.03);
+    }
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+        padding: 1.5rem 1.8rem;
+      }
+      .btn-link {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to home page</h1> 
+  <a href="/predictdata" class="btn-link">Go to Student Performance Predictor</a>
+</body>
+</html>
